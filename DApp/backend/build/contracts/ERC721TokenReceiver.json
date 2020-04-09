@@ -1,0 +1,550 @@
+{
+  "contractName": "ERC721TokenReceiver",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "onERC721Received",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.12+commit.7709ece9\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"onERC721Received\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"onERC721Received(address,uint256,bytes)\":{\"details\":\"Magic value to be returned upon successful reception of an NFT Equals to `bytes4(keccak256(\\\"onERC721Received(address,uint256,bytes)\\\"))`, which can be also obtained as `ERC721Receiver(0).onERC721Received.selector`\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/F/Auction DApp/backend/contracts/ERC721Token/ERC721TokenReceiver.sol\":\"ERC721TokenReceiver\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/F/Auction DApp/backend/contracts/ERC721Token/ERC721TokenReceiver.sol\":{\"keccak256\":\"0x15fa37a674f4394eae7b1f94fd260c08dfece1a4b0b74ffa54d3464e74547619\",\"urls\":[\"bzz-raw://b00e63fa0f42a9f25d327fe9d86ae0c6de60cae76b031578e044e448530c7804\",\"dweb:/ipfs/Qme14esKcXRrQSZUY35jPvHNzb3PLS1P9NaCWD377vxobD\"]},\"/F/Auction DApp/backend/contracts/ERC721Token/ERC721TokenReceiverInterface.sol\":{\"keccak256\":\"0xee3afd3767855c36e880c0c03cef95adb01cf2339be1dad6bcde946be3e67df6\",\"urls\":[\"bzz-raw://26d43c95d42afb06ec389635289b2508215413d356497ee7b4eb7fb1f86ab719\",\"dweb:/ipfs/QmdoDFYtdDUpGvfNX99E1YmzSGhFxK6dBEXE9QZ6onSYCU\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061016e806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c8063f0b9e5ba14610030575b600080fd5b6101136004803603606081101561004657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291908035906020019064010000000081111561008d57600080fd5b82018360208201111561009f57600080fd5b803590602001918460018302840111640100000000831117156100c157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610129565b6040518082815260200191505060405180910390f35b600063f0b9e5ba9050939250505056fea265627a7a723158207dd690b2e9424d80f6f2d75a18b502229618919ab8895f62264d89e87b12285d64736f6c634300050c0032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c8063f0b9e5ba14610030575b600080fd5b6101136004803603606081101561004657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291908035906020019064010000000081111561008d57600080fd5b82018360208201111561009f57600080fd5b803590602001918460018302840111640100000000831117156100c157600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610129565b6040518082815260200191505060405180910390f35b600063f0b9e5ba9050939250505056fea265627a7a723158207dd690b2e9424d80f6f2d75a18b502229618919ab8895f62264d89e87b12285d64736f6c634300050c0032",
+  "sourceMap": "84:467:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:467:5;;;;;;;",
+  "deployedSourceMap": "84:467:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;84:467:5;;;;;;;;;;;;;;;;;;;416:132;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;416:132:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;416:132:5;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;416:132:5;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;416:132:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;416:132:5;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;510:4;532:10;525:17;;416:132;;;;;:::o",
+  "source": "pragma solidity >=0.4.20 <0.7.0;\r\n\r\nimport \"./ERC721TokenReceiverInterface.sol\";\r\n\r\ncontract ERC721TokenReceiver is ERC721TokenReceiverInterface {\r\n    /**\r\n     * @dev Magic value to be returned upon successful reception of an NFT\r\n     *  Equals to `bytes4(keccak256(\"onERC721Received(address,uint256,bytes)\"))`,\r\n     *  which can be also obtained as `ERC721Receiver(0).onERC721Received.selector`\r\n     */\r\n  \r\n  function onERC721Received(address _from, uint256 _tokenId, bytes memory _data) public returns(uint) {\r\n      return 0xf0b9e5ba;\r\n  }\r\n}\r\n",
+  "sourcePath": "F:\\Auction DApp\\backend\\contracts\\ERC721Token\\ERC721TokenReceiver.sol",
+  "ast": {
+    "absolutePath": "/F/Auction DApp/backend/contracts/ERC721Token/ERC721TokenReceiver.sol",
+    "exportedSymbols": {
+      "ERC721TokenReceiver": [
+        1803
+      ]
+    },
+    "id": 1804,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1785,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".20",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:5"
+      },
+      {
+        "absolutePath": "/F/Auction DApp/backend/contracts/ERC721Token/ERC721TokenReceiverInterface.sol",
+        "file": "./ERC721TokenReceiverInterface.sol",
+        "id": 1786,
+        "nodeType": "ImportDirective",
+        "scope": 1804,
+        "sourceUnit": 1818,
+        "src": "36:44:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1787,
+              "name": "ERC721TokenReceiverInterface",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1817,
+              "src": "116:28:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC721TokenReceiverInterface_$1817",
+                "typeString": "contract ERC721TokenReceiverInterface"
+              }
+            },
+            "id": 1788,
+            "nodeType": "InheritanceSpecifier",
+            "src": "116:28:5"
+          }
+        ],
+        "contractDependencies": [
+          1817
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1803,
+        "linearizedBaseContracts": [
+          1803,
+          1817
+        ],
+        "name": "ERC721TokenReceiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1801,
+              "nodeType": "Block",
+              "src": "516:32:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30786630623965356261",
+                    "id": 1799,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "532:10:5",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_4038714810_by_1",
+                      "typeString": "int_const 4038714810"
+                    },
+                    "value": "0xf0b9e5ba"
+                  },
+                  "functionReturnParameters": 1798,
+                  "id": 1800,
+                  "nodeType": "Return",
+                  "src": "525:17:5"
+                }
+              ]
+            },
+            "documentation": "@dev Magic value to be returned upon successful reception of an NFT\n Equals to `bytes4(keccak256(\"onERC721Received(address,uint256,bytes)\"))`,\n which can be also obtained as `ERC721Receiver(0).onERC721Received.selector`",
+            "id": 1802,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onERC721Received",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1795,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1790,
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1802,
+                  "src": "442:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1789,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "442:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1792,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1802,
+                  "src": "457:16:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1791,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "457:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1794,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1802,
+                  "src": "475:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 1793,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "475:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "441:53:5"
+            },
+            "returnParameters": {
+              "id": 1798,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1797,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1802,
+                  "src": "510:4:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1796,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "510:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "509:6:5"
+            },
+            "scope": 1803,
+            "src": "416:132:5",
+            "stateMutability": "nonpayable",
+            "superFunction": 1816,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1804,
+        "src": "84:467:5"
+      }
+    ],
+    "src": "0:553:5"
+  },
+  "legacyAST": {
+    "absolutePath": "/F/Auction DApp/backend/contracts/ERC721Token/ERC721TokenReceiver.sol",
+    "exportedSymbols": {
+      "ERC721TokenReceiver": [
+        1803
+      ]
+    },
+    "id": 1804,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1785,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".20",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:5"
+      },
+      {
+        "absolutePath": "/F/Auction DApp/backend/contracts/ERC721Token/ERC721TokenReceiverInterface.sol",
+        "file": "./ERC721TokenReceiverInterface.sol",
+        "id": 1786,
+        "nodeType": "ImportDirective",
+        "scope": 1804,
+        "sourceUnit": 1818,
+        "src": "36:44:5",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 1787,
+              "name": "ERC721TokenReceiverInterface",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 1817,
+              "src": "116:28:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ERC721TokenReceiverInterface_$1817",
+                "typeString": "contract ERC721TokenReceiverInterface"
+              }
+            },
+            "id": 1788,
+            "nodeType": "InheritanceSpecifier",
+            "src": "116:28:5"
+          }
+        ],
+        "contractDependencies": [
+          1817
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1803,
+        "linearizedBaseContracts": [
+          1803,
+          1817
+        ],
+        "name": "ERC721TokenReceiver",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 1801,
+              "nodeType": "Block",
+              "src": "516:32:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "30786630623965356261",
+                    "id": 1799,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "532:10:5",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_4038714810_by_1",
+                      "typeString": "int_const 4038714810"
+                    },
+                    "value": "0xf0b9e5ba"
+                  },
+                  "functionReturnParameters": 1798,
+                  "id": 1800,
+                  "nodeType": "Return",
+                  "src": "525:17:5"
+                }
+              ]
+            },
+            "documentation": "@dev Magic value to be returned upon successful reception of an NFT\n Equals to `bytes4(keccak256(\"onERC721Received(address,uint256,bytes)\"))`,\n which can be also obtained as `ERC721Receiver(0).onERC721Received.selector`",
+            "id": 1802,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "onERC721Received",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1795,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1790,
+                  "name": "_from",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1802,
+                  "src": "442:13:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1789,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "442:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1792,
+                  "name": "_tokenId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1802,
+                  "src": "457:16:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1791,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "457:7:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1794,
+                  "name": "_data",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1802,
+                  "src": "475:18:5",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 1793,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "475:5:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "441:53:5"
+            },
+            "returnParameters": {
+              "id": 1798,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1797,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1802,
+                  "src": "510:4:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1796,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "510:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "509:6:5"
+            },
+            "scope": 1803,
+            "src": "416:132:5",
+            "stateMutability": "nonpayable",
+            "superFunction": 1816,
+            "visibility": "public"
+          }
+        ],
+        "scope": 1804,
+        "src": "84:467:5"
+      }
+    ],
+    "src": "0:553:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.12+commit.7709ece9.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x6FA7B167A57593341b9150914249b7bF55aAC687",
+      "transactionHash": "0xc75cb0dd20d24c25e3777a017662633053fadae98e1fa55f7a6783293ccd8005"
+    }
+  },
+  "schemaVersion": "3.0.20",
+  "updatedAt": "2020-01-15T09:15:10.799Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {
+      "onERC721Received(address,uint256,bytes)": {
+        "details": "Magic value to be returned upon successful reception of an NFT Equals to `bytes4(keccak256(\"onERC721Received(address,uint256,bytes)\"))`, which can be also obtained as `ERC721Receiver(0).onERC721Received.selector`"
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
